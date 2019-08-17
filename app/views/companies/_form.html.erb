@@ -1,0 +1,6 @@
+<%= simple_form_for @company do |f| %>
+  <%= f.input :title, label: 'Company Title', error: 'Company Title is mandatory, please specify one' %>
+  <%= f.input :short_description, hint: 'Under 20 characters' %>
+  <%= f.hidden_field :user_id %>
+  <%= f.button :submit %>
+<% end %>
